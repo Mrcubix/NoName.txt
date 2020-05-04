@@ -1,4 +1,5 @@
 # NoName.txt
 Top down zelda like game on python
 
-Created this repo in order to ask for help
+v0.1: basic coding
+v0.2: don't remember
