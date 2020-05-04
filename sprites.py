@@ -15,18 +15,18 @@ class Player(pg.sprite.Sprite):
 
     def get_keys(self):
 
-        game_folder = path.dirname(__file__)
-        img_folder = path.join(game_folder, "assets")
+        #game_folder = path.dirname(__file__)
+        #img_folder = path.join(game_folder, "assets")
 
-        PLAYER_IMG = 'main_character_sprite_alone_front.png'
-        PLAYER_IMG_UP = 'main_character_sprite_alone_up.png'
-        PLAYER_IMG_RIGHT = 'main_character_sprite_alone_right.png'
-        PLAYER_IMG_LEFT = 'main_character_sprite_alone_left.png'
+        #PLAYER_IMG = 'main_character_sprite_alone_front.png'
+        #PLAYER_IMG_UP = 'main_character_sprite_alone_up.png'
+        #PLAYER_IMG_RIGHT = 'main_character_sprite_alone_right.png'
+        #PLAYER_IMG_LEFT = 'main_character_sprite_alone_left.png'
 
-        PLAYER_IMG_UP = path.join(img_folder, 'main_character_sprite_alone_up.png')
-        PLAYER_IMG = path.join(img_folder, 'main_character_sprite_alone_front.png')
-        PLAYER_IMG_RIGHT = path.join(img_folder, 'main_character_sprite_alone_right.png')
-        PLAYER_IMG_LEFT = path.join(img_folder, 'main_character_sprite_alone_left.png')
+        #PLAYER_IMG_UP = path.join(img_folder, 'main_character_sprite_alone_up.png')
+        #PLAYER_IMG = path.join(img_folder, 'main_character_sprite_alone_front.png')
+        #PLAYER_IMG_RIGHT = path.join(img_folder, 'main_character_sprite_alone_right.png')
+        #PLAYER_IMG_LEFT = path.join(img_folder, 'main_character_sprite_alone_left.png')
 
 
 
@@ -37,25 +37,25 @@ class Player(pg.sprite.Sprite):
             #'Left': pg.image.load(img_folder, 'main_character_sprite_alone_left.png').convert_alpha()
         #}
 
-        direction = pg.Vector2()
+        #direction = pg.Vector2()
 
         self.vel = vec(0, 0)
         keys = pg.key.get_pressed()
         if keys[pg.K_LEFT] or keys[pg.K_a]:
-            direction.x -= 1
-            self.image = PLAYER_IMG_LEFT #players_image['Left']
+            #direction.x -= 1
+            #self.image = PLAYER_IMG_LEFT #players_image['Left']
             self.vel.x = -PLAYER_SPEED
         if keys[pg.K_RIGHT] or keys[pg.K_d]:
-            direction.x += 1
-            self.image = PLAYER_IMG_RIGHT #players_image['Right']
+            #direction.x += 1
+            #self.image = PLAYER_IMG_RIGHT #players_image['Right']
             self.vel.x = PLAYER_SPEED
         if keys[pg.K_UP] or keys[pg.K_z]:
-            direction.y -= 1
-            self.image = PLAYER_IMG_UP #players_image['Up']
+            #direction.y -= 1
+            #self.image = PLAYER_IMG_UP #players_image['Up']
             self.vel.y = -PLAYER_SPEED
         if keys[pg.K_DOWN] or keys[pg.K_q]:
-            direction.y += 1
-            self.image = PLAYER_IMG #players_image['Down']
+            #direction.y += 1
+            #self.image = PLAYER_IMG #players_image['Down']
             self.vel.y = PLAYER_SPEED
 
             if self.vel.x != 0 and self.vel.y != 0:
