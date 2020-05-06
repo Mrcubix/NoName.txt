@@ -13,7 +13,7 @@ TILESIZE = 32
 GRIDWIDTH = WIDTH / TILESIZE
 GRIDWEIGHT = HEIGHT / TILESIZE
 
-PLAYER_SPEED = 275
+PLAYER_SPEED = 175
 PLAYER_IMG = 'main_character_sprite_alone_front.png'
 PLAYER_IMG_UP = 'main_character_sprite_alone_up.png'
 PLAYER_IMG_RIGHT = 'main_character_sprite_alone_right.png'
